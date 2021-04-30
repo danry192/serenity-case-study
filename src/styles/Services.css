@@ -1,0 +1,29 @@
+.container-fluid{
+  margin:0 auto;
+  max-width: 1200px;
+  padding: 0 15px;
+}
+.block_ServicesBlock{
+  padding: 0px;
+  color: rgba(0,0,0, .65);
+  font-size: 14px;
+  line-height: 1.5;
+  list-style: none;
+  border: 1px solid #d9d9d9;
+  background-color: #fafafa;
+  border-bottom:0;
+  border-radius: 2px;
+}
+
+.collapseHeader{
+  text-align: center;
+  top:50%;
+  left: 16px;
+  display: inline-block;
+  box-sizing: border-box;
+
+}
+
+.content{
+  padding:10px;
+}

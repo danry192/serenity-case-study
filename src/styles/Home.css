@@ -1,0 +1,48 @@
+/*color schemes:
+serenity (light blue): #ADC8D2 [loho]
+taupe: #9F9C93     [don't know yet]
+slate: #54627B     [background]
+ivory: #F4F4F6     [nav bar]
+*/
+
+
+.homeBody {
+    height:100vh;
+    width:100vw;
+    background:linear-gradient(160deg, #F4F4F6, #F4F4F6 60.5%, #54627B 60%, #54627B);
+    padding: 20px;
+    margin: 0;
+  }
+  h1, h2, p, ul, li {
+    font-family: sans-serif;
+  }
+  ul.header li {
+    display: inline;
+    list-style-type: none;
+    margin: 0;
+  }
+  ul.header {
+    font-size: 20px;
+    padding: 0;
+    
+    
+  }
+  ul.header li a {
+    color: #9F9C93;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 20px;
+    display: inline-block;
+  }
+  .content {
+    /*background-color: #FFF;*/
+  
+    padding: 20px;
+  }
+  .content h2 {
+    padding: 0;
+    margin: 0;
+  }
+  .content li {
+    margin-bottom: 10px;
+  }
