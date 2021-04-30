@@ -22,7 +22,7 @@ const LoginForm=(props) =>{
 
         <section className = "login">
             <div className="loginContainer">
-                <label>Username</label>
+             <label>Username</label>
                 <input 
                     type="text"
                     autoFocus
@@ -60,21 +60,9 @@ const LoginForm=(props) =>{
 
                     )}
                 </div>
-
-            
-
-            
-            
-            
-            
-            
-            
-            
-            
-        
             </div>
 
-
+            
         </section>
     );
 };

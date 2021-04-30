@@ -35,7 +35,7 @@ class App extends Component {
                     <Route exact path ="/components/home/Home" component={Home}/>
                     <Route path ="/components/services/Services" component={Services}/>
                     <Route path = "/components/contact/Contact" component={Contact}/>
-                    {/*<Route path = "/components/login/careers" component={Careers}/>*/}
+                    {/*<Route path = "/components/login/careers" component={Careers}/> route after being logged in*/}
                     <Route path = "/components/login/LoginForm" component={Login}/>
 
                     <Footer />

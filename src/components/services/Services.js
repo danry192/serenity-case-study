@@ -13,7 +13,7 @@ function ServicesTabs() {
       <div className="container-fluid">
         <Collapse accordion>
           <Panel className="collapseHeader" header="Companionship Care" key="1">
-            <p className="content">text</p>
+            <p className="content">Companionship care is when...</p>
           </Panel>
 
           <br></br>
@@ -24,8 +24,8 @@ function ServicesTabs() {
 
           <br></br>
 
-          <Panel className="collapseHeader" header="Management Care" key="3">
-            <p className="content">text</p>
+          <Panel className="collapseHeader" header="Medicine and Management Care" key="3">
+            <p className="content">Medicine and Management care is for those who need additional support in keeping track of taking their perscriptions, obtaining them and more.</p>
           </Panel>
           
         </Collapse>
