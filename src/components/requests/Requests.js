@@ -27,7 +27,7 @@ class Requests extends Component {
     this.setState({ status: "Sending" });  
     axios({
       method: "POST",
-      url: "http://localhost:5000/react-gh-pages#/components/requests/Requests",
+      url: "http://localhost:8080/",
       data: this.state,
     }).then((response) => {
       if (response.data.status === "sent") {

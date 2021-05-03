@@ -19,7 +19,7 @@ ivory: #F4F4F6     [nav bar]
   ul.header li {
     display: inline;
     list-style-type: none;
-    margin: 0;
+    margin-left: auto;
   }
   ul.header {
     font-size: 20px;
