@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import fire from './fire';
+import fire from '../../backend/fire';
 import LoginForm from './LoginForm';
-import Careers from "./Careers";
+//import Careers from "./Careers";
 
 const Login = () => {
 
@@ -102,7 +102,7 @@ const Login = () => {
             {/*if user exists, take to careers page*/}
 
             {user ? (
-                <Careers handleLogout={handleLogout}/>
+                <LoginForm handleLogout={handleLogout}/>
 
             ) : (
 
