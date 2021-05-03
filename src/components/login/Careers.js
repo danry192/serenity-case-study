@@ -5,7 +5,10 @@ const Careers = ({handleLogout}) => {
     
     <section className='careers'>
         <nav>
-            <h2>Welcome</h2>
+            <h2>Careers</h2>
+
+            <p>Serenity Home Care is always looking to expand and grow.</p>
+
             <button onClick={handleLogout}>Logout</button>
         </nav>
 

@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
-import fire from '../../backend/fire';
+import fire from './fire';
 import LoginForm from './LoginForm';
-//import Careers from "./Careers";
+import { Redirect } from "react-router-dom";
+import Careers from "./Careers";
 
 const Login = () => {
 
@@ -102,7 +103,7 @@ const Login = () => {
             {/*if user exists, take to careers page*/}
 
             {user ? (
-                <LoginForm handleLogout={handleLogout}/>
+                <Careers handleLogout={handleLogout}/>
 
             ) : (
 

@@ -22,6 +22,8 @@ const LoginForm=(props) =>{
 
         <section className = "login">
             <div className="loginContainer">
+             
+             <form>
              <label>Username</label>
                 <input 
                     type="text"
@@ -46,6 +48,7 @@ const LoginForm=(props) =>{
                 <div className="btnContainer">
                     {hasAccount ? (
                         <>
+                        
                         <button onClick={handleLogin}>Sign In</button>
                         <p>Don't have an account? <span onClick={() => setHasAccount(!hasAccount)}>Sign up here</span></p>
                         </>
@@ -60,6 +63,7 @@ const LoginForm=(props) =>{
 
                     )}
                 </div>
+                </form>
             </div>
 
             
