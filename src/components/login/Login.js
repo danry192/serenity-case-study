@@ -1,27 +1,28 @@
 import React, { useState, useEffect } from "react";
 import fire from './fire';
 import LoginForm from './LoginForm';
-import { Redirect } from "react-router-dom";
 import Careers from "./Careers";
+import { Route, Redirect } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.css";
 
 const Login = () => {
 
-    const[user, setUser] = useState('');
-    const[email, setEmail] = useState('');
-    const[password, setPassword]= useState('');
-    const[emailError, setEmailError] = useState('');
-    const[passwordError, setPasswordError] = useState('');
+    const [user, setUser] = useState('');
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const [emailError, setEmailError] = useState('');
+    const [passwordError, setPasswordError] = useState('');
 
     //Will help switch from sign in to sign up
-    const[hasAccount, setHasAccount] = useState(false);
+    const [hasAccount, setHasAccount] = useState(false);
 
-    const clearInputs = () =>{
+    const clearInputs = () => {
         setEmail('');
         setPassword('');
 
     }
 
-    const clearErrors = () =>{
+    const clearErrors = () => {
         setEmailError('');
         setPasswordError('');
     }
@@ -33,12 +34,12 @@ const Login = () => {
             .auth()
             .signInWithEmailAndPassword(email, password)
             .catch(err => {
-                switch(err.code){
+                switch (err.code) {
                     case "auth/invalid-email":
                     case "auth/user-disabled":
                     case "auth/user-not-found":
-                      setEmailError(err.message);
-                      break;
+                        setEmailError(err.message);
+                        break;
                     case "auth/wrong-password":
                         setPasswordError(err.message);
                         break;
@@ -47,18 +48,25 @@ const Login = () => {
     };
 
     //Sign up Function
-
+    const PrivateRoute = ({ component: Component, ...rest }) =>
+    (
+        <Route {...rest} render={props =>
+        (
+            <Redirect to={{ pathname: '/Careers' }} />
+        )} />
+    );
     const handleSignup = () => {
+
         clearErrors();
         fire
             .auth()
             .createUserWithEmailAndPassword(email, password)
             .catch(err => {
-                switch(err.code){
+                switch (err.code) {
                     case "auth/email-already-in-use":
                     case "auth/invalid-email":
-                      setEmailError(err.message);
-                      break;
+                        setEmailError(err.message);
+                        break;
                     case "auth/weak-password":
                         setPasswordError(err.message);
                         break;
@@ -74,12 +82,12 @@ const Login = () => {
 
     //Listener to check if user exists
 
-    const authListener = () =>{
+    const authListener = () => {
         fire.auth().onAuthStateChanged(user => {
-            if(user){
+            if (user) {
                 clearInputs();
                 setUser(user);
-            }else{
+            } else {
                 setUser("");
             }
         });
@@ -91,38 +99,45 @@ const Login = () => {
 
     }, []);
 
-    return(
+    return (
 
 
         <div className="App">
             <h3>We are always looking for eager applicants to join our team!</h3>
             <br></br>
-            <h4>To Apply, create an account or log in below</h4>
+            <h4>To Apply for a position, create an account or log in below:</h4>
 
 
             {/*if user exists, take to careers page*/}
 
             {user ? (
-                <Careers handleLogout={handleLogout}/>
+                <Careers handleLogout={handleLogout} />
 
             ) : (
 
-                <LoginForm 
-                email={email} 
-                setEmail={setEmail} 
-                password={password}
-                setPassword={setPassword}
-                handleLogin={handleLogin}
-                handleSignup={handleSignup}
-                hasAccount={hasAccount}
-                setHasAccount={setHasAccount}
-                emailError={emailError}
-                passwordError={passwordError}
+                <LoginForm
+                    email={email}
+                    setEmail={setEmail}
+                    password={password}
+                    setPassword={setPassword}
+                    handleLogin={handleLogin}
+                    handleSignup={handleSignup}
+                    hasAccount={hasAccount}
+                    setHasAccount={setHasAccount}
+                    emailError={emailError}
+                    passwordError={passwordError}
                 />
-                
+
             )}
-                
-        </div>
+
+           
+
+
+
+
+
+
+            </div>
     );
 };
 

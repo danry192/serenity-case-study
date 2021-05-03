@@ -5,7 +5,7 @@ import Home from "./components/home/Home";
 import Services from "./components/services/Services";
 import Contact from "./components/contact/Contact";
 import Login from "./components/login/Login";
-
+//import Careers from "./components/login/Careers";
 import logo from "./logo_new.png";
 import styled from "styled-components";
 import "bootstrap/dist/css/bootstrap.css";
@@ -15,6 +15,7 @@ import "./index.css";
 //import Footer from "./components/footer/Footer";
 
 //import { Components } from "antd/lib/date-picker/generatePicker";
+
 
 class App extends Component {
     render(){
