@@ -26,10 +26,11 @@ const contactEmail = nodemailer.createTransport({
     }
   });
 
-  router.post("/components/requests/Requests", (req, res) => {
+  router.post("/components/contact/Contact", (req, res) => {
     const name = req.body.name;
     const email = req.body.email;
     const message = req.body.message; 
+    const FileUpload = req.body.FileUpload;
     const mail = {
       from: name,
       to: "serenityhomecare9@gmail.com",

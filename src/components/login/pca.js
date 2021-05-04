@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { Component } from 'react'
 import "../../components/contact/Contact.css";
+import FileUpload from "./FileUpload";
 
 class PCA extends Component {
 
@@ -11,7 +12,7 @@ class PCA extends Component {
             lastName: '',
             email: '',
             subject: '',
-            message: ''
+            message1: ''
         }
     }
 
@@ -119,6 +120,8 @@ class PCA extends Component {
                                 required value={this.state.message}
                                 onChange={this.onMessageChange.bind(this)} />
                         </div>
+
+                        <FileUpload></FileUpload>
                        
                         <div className="formButton">
                             <button type="submit">Submit</button>
