@@ -3,9 +3,6 @@ import { Route, wtihRouter,Link } from "react-router-dom";
 
 import "bootstrap/dist/css/bootstrap.css";
 import { Card, Button, Row, Col } from 'react-bootstrap';
-import PCA from "./pca";
-import RN from "./rn";
-import CNA from "./cna";
 
 
 const Careers = ({ handleLogout }) => {
@@ -32,8 +29,8 @@ const Careers = ({ handleLogout }) => {
                                         <li>Has proper CPR certifications and can perform CPR on patients if needed</li>
 
                                     </ul>
-                                </Card.Text>
-                                <Link to="/login/rn"><Button>Apply Here</Button></Link>
+                                </Card.Text> 
+                                <Link to="/Careers/RN"><Button>Apply Here</Button></Link>
                             </Card.Body>
                         </Card>
                     </Col>
@@ -89,27 +86,6 @@ const Careers = ({ handleLogout }) => {
                     </Col>
 
                 </Row>
-
-                    
-                   
-                 
-
-                <div className="content">
-                    <Route path = "/Careers/rn" component={RN}/>
-
-                    <Route path ="/Careers/PCA" component={PCA}/>
-                    
-                    <Route path = "/Careers/CNA" component={CNA}/>
-                </div>
-
-               
-                
-
-
-
-
-
-
 
 
                 <button onClick={handleLogout}>Logout</button>
