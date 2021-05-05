@@ -1,6 +1,6 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
-import "./Contact.css";
+import "../../styles/Contact.css";
 
 export default function Contact() {
 
@@ -18,6 +18,7 @@ export default function Contact() {
     
   
     return (
+        
         <div className="section-title">
                 <h2 className="title">Contact Us</h2>
                 <p>Let us know what you think! In order to provide better service,
@@ -25,7 +26,6 @@ export default function Contact() {
                 <div className="formContainer">
                     <form onSubmit={sendEmail}
                         method="POST">
-
                         <div className="formItem">
                             <label>First Name</label>
                             <input placeholder="First Name"
@@ -35,7 +35,6 @@ export default function Contact() {
                                 required
                                  />
                         </div>
-
                         <div className="formItem">
                             <label>Last Name</label>
                             <input placeholder="Last Name"
@@ -45,7 +44,6 @@ export default function Contact() {
                                 required
                                 />
                         </div>
-
                         <div className="formItem">
                             <label>Email</label>
                             <input placeholder="Email"

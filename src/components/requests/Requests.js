@@ -1,80 +1,101 @@
-import React, { Component } from "react";
-import axios from "axios";
+import React from 'react';
+import emailjs from 'emailjs-com';
+import "../../styles/Requests.css";
 
-class Requests extends Component {
-  constructor() {
-    super();
-    this.state = {
-      name: "",
-      email: "",
-      message: "",
-      status: "Submit"
-    };   
-  } 
-  handleChange(event) {
-    const field = event.target.id;
-    if (field === "name") {
-      this.setState({ name: event.target.value });
-    } else if (field === "email") {
-      this.setState({ email: event.target.value });
-    } else if (field === "message") {
-      this.setState({ message: event.target.value });
-    }
+
+export default function Requests() {
+
+  function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs.sendForm('gmail', 'contact-form', e.target, 'user_hRcPJC7dXJdiqzXhshaok')
+      .then((result) => {
+        console.log(result.text);
+      }, (error) => {
+        console.log(error.text);
+      }); e.target.reset();
   }
 
-  handleSubmit(event) {
-    event.preventDefault();  
-    this.setState({ status: "Sending" });  
-    axios({
-      method: "POST",
-      url: "http://localhost:8080/",
-      data: this.state,
-    }).then((response) => {
-      if (response.data.status === "sent") {
-        alert("Message Sent");
-        this.setState({ name: "", email: "", message: "", status: "Submit" });
-      } else if (response.data.status === "failed") {
-        alert("Message Failed");
-      }
-    });
-  }
-  render() {
-    let buttonText = this.state.status;
-    return (      
-        <form onSubmit={this.handleSubmit.bind(this)} method="POST">
-            <div>
-            <label htmlFor="name">Name:</label>
-            <input
-                type="text"
-                id="name"
-                value={this.state.name}
-                onChange={this.handleChange.bind(this)}
-                required
+ 
+
+
+  return (
+    <div className="section-title">
+      <h2 className="title">Requests</h2>
+      <p>Let us know what you think! In order to provide better service,
+                                 please do not hesitate to give us your feedback. Thank you.</p><hr />
+      <div className="formContainer">
+        <form onSubmit={sendEmail}
+          method="POST">
+          <div className="formItem">
+            <label>First Name</label>
+            <input placeholder="First Name"
+              name="firstName"
+              type="text"
+              className="firstName"
+              required
             />
-            </div>
-            <div>
-            <label htmlFor="email">Email:</label>
-            <input
-                type="email"
-                id="email"
-                value={this.state.email}
-                onChange={this.handleChange.bind(this)}
-                required
+          </div>
+          <div className="formItem">
+            <label>Last Name</label>
+            <input placeholder="Last Name"
+              name="lastName"
+              type="text"
+              className="lastName"
+              required
             />
-            </div>
-            <div>
-            <label htmlFor="message">Message:</label>
-            <textarea
-                id="message"
-                value={this.state.message}
-                onChange={this.handleChange.bind(this)}
-                required
+          </div>
+          <div className="formItem">
+            <label>Email</label>
+            <input placeholder="Email"
+              name="email"
+              type="email"
+              className="email"
+              aria-describedby="emailHelp"
+              required
             />
-            </div>
-            <button type="submit">{buttonText}</button>
-        </form>      
-    );
-}
+          </div>
+
+
+          <div className="form-group">
+            <label>Subject</label>
+            <input placeholder="Subject"
+              name="subject" type="text"
+              className="subject"
+            />
+          </div>
+
+          <div className="form-group">
+            <label>Choose a service:</label>
+            <select name="option">
+              <option value="Companionship Care">Companionship Care</option>
+              <option value="Medicine Management and etc.">Medicine and Assistance Management</option>
+              <option value="Hospice Care">Hospice Care</option>
+              <option value="Personal Home Care">Personal Home Care</option>
+            </select>
+
+          </div>
+
+          <div className="form-group">
+            <label>Message</label>
+            <textarea placeholder="Message"
+              name="message"
+              className="message"
+              rows="5" col="6"
+              required
+            />
+          </div>
+
+          <div className="formButton">
+            <button type="submit">Submit</button>
+          </div>
+
+        </form>
+      </div >
+    </div >
+
+
+
+  );
 }
 
-export default Requests;

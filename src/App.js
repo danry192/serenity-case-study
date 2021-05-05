@@ -4,11 +4,12 @@ import { Route, NavLink, HashRouter, BrowserRouter, Link } from "react-router-do
 import Home from "./components/home/Home";
 import Services from "./components/services/Services";
 import Contact from "./components/contact/Contact";
+import Requests from "./components/requests/Requests";
 import Login from "./components/login/Login";
-//import Careers from "./components/login/Careers";
 import RN from "./components/login/rn";
 import CNA from "./components/login/cna";
 import PCA from "./components/login/pca";
+
 import logo from "./logo_new.png";
 import styled from "styled-components";
 import "bootstrap/dist/css/bootstrap.css";
@@ -31,7 +32,7 @@ class App extends Component {
                     <li><NavLink to="/">Home</NavLink></li>
                     <li><NavLink to="/Services">Services</NavLink></li>
                     <li><NavLink to="/Contact">Contact</NavLink></li>
-                    {/*<li><NavLink to="/components/login/careers">Careers</NavLink></li>*/}
+                    <li><NavLink to="/Requests">Requests</NavLink></li>
                     <li><NavLink to="/Login">Login</NavLink></li>
 
 
@@ -41,7 +42,7 @@ class App extends Component {
                     <Route exact path ="/" component={Home}/>
                     <Route path ="/Services" component={Services}/>
                     <Route path = "/Contact" component={Contact}/>
-                    {/*<Route path = "/components/login/careers" component={Careers}/> route after being logged in*/}
+                    <Route path = "/Requests" component={Requests}/>
                     <Route path = "/Login" component={Login}/>
                     <Route path="/Careers/RN" component={RN}></Route>
                     <Route path="/Careers/PCA" component={PCA}></Route>

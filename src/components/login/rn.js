@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { Component } from 'react'
-import "../../components/contact/Contact.css";
+import "../../styles/CareersApp.css";
+
 
 
 class RN extends Component {
