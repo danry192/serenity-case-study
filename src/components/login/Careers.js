@@ -30,7 +30,7 @@ const Careers = ({ handleLogout }) => {
 
                                     </ul>
                                 </Card.Text> 
-                                <Link to="/Careers/RN"><Button>Apply Here</Button></Link>
+                                <Link to="/Career/RN"><Button>Apply Here</Button></Link>
                             </Card.Body>
                         </Card>
                     </Col>
@@ -52,7 +52,7 @@ const Careers = ({ handleLogout }) => {
 
                                     </ul>
                                 </Card.Text>
-                                <Link to="/Careers/CNA"><Button variant="primary">Apply Here</Button></Link>
+                                <Link to="/Career/CNA"><Button variant="primary">Apply Here</Button></Link>
 
                                 
                             </Card.Body>
@@ -74,7 +74,7 @@ const Careers = ({ handleLogout }) => {
                                         <li>Has proper CPR certifications and can perform CPR on patients if needed</li>
 
                                     </ul>
-                                </Card.Text> <Link to="/Careers/PCA"><Button variant="primary">Apply Here</Button></Link>
+                                </Card.Text> <Link to="/Career/PCA"><Button variant="primary">Apply Here</Button></Link>
                                 
                             </Card.Body>
                         </Card>

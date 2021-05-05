@@ -1,5 +1,6 @@
 import React from 'react';
 import "../../styles/Login.css";
+import { Link } from "react-router-dom";
 
 
 const LoginForm=(props) =>{
@@ -48,7 +49,7 @@ const LoginForm=(props) =>{
                 <div className="btnContainer">
                     {hasAccount ? (
                         <>
-                        <button onClick={handleLogin}>Sign In</button>
+                        <Link to="/Careers"><button onClick={handleLogin}>Sign In</button></Link>
                         <p>Don't have an account? <span onClick={() => setHasAccount(!hasAccount)}>Sign up here</span></p>
                         </>
 
@@ -56,7 +57,7 @@ const LoginForm=(props) =>{
 
                     ) : (
                         <>
-                        <button onClick={handleSignup}>Sign Up</button>
+                        <Link to="/Careers"><button onClick={handleSignup}>Sign Up</button></Link>
                         <p>Have an account? <span onClick={() => setHasAccount(!hasAccount)}>Log In here</span></p>
                         </>
 

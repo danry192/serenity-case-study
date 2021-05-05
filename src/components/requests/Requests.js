@@ -77,7 +77,7 @@ export default function Requests() {
           </div>
 
           <div className="form-group">
-            <label>Message</label>
+            <label>Inquiry or Request:</label>
             <textarea placeholder="Message"
               name="message"
               className="message"

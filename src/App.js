@@ -9,7 +9,7 @@ import Login from "./components/login/Login";
 import RN from "./components/login/rn";
 import CNA from "./components/login/cna";
 import PCA from "./components/login/pca";
-
+import Careers from "./components/login/Careers";
 import logo from "./logo_new.png";
 import styled from "styled-components";
 import "bootstrap/dist/css/bootstrap.css";
@@ -44,9 +44,10 @@ class App extends Component {
                     <Route path = "/Contact" component={Contact}/>
                     <Route path = "/Requests" component={Requests}/>
                     <Route path = "/Login" component={Login}/>
-                    <Route path="/Careers/RN" component={RN}></Route>
-                    <Route path="/Careers/PCA" component={PCA}></Route>
-                    <Route path="/Careers/CNA" component={CNA}></Route>
+                    <Route path = "/Careers" component={Careers}/>
+                    <Route path="/Career/RN" component={RN}></Route>
+                    <Route path="/Career/PCA" component={PCA}></Route>
+                    <Route path="/Career/CNA" component={CNA}></Route>
                 </div>
                 </NavbarContainer>
                 
