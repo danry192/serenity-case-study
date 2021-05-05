@@ -1,123 +1,79 @@
-import axios from 'axios';
-import React, { Component } from 'react'
+import React from 'react';
+import emailjs from 'emailjs-com';
 import "./Contact.css";
 
-class Contact extends Component {
+export default function Contact() {
 
-    constructor(props) {
-        super(props);
-        this.state = {
-            firstName: '',
-            lastName: '',
-            email: '',
-            subject: '',
-            message: ''
-        }
+    function sendEmail(e) {
+      e.preventDefault();
+  
+      emailjs.sendForm('gmail', 'contact-form', e.target, 'user_hRcPJC7dXJdiqzXhshaok')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });e.target.reset();
     }
 
-    onFirstNameChange(event) {
-        this.setState({ firstName: event.target.value })
-    }
-
-    onLastNameChange(event) {
-        this.setState({ lastName: event.target.value })
-    }
-
-    onEmailChange(event) {
-        this.setState({ email: event.target.value })
-    }
-
-    onSubjectChange(event) {
-        this.setState({ subject: event.target.value })
-    }
-
-    onMessageChange(event) {
-        this.setState({ message: event.target.value })
-    }
-
-    submitForm(e) {
-        e.preventDefault();
-        axios({
-            method: "POST",
-            url: "/send",
-            data: this.state
-        }).then((response) => {
-            if (response.data.status === 'success') {
-                alert("Message was sent!");
-                this.resetForm()
-            } else if (response.data.status === 'fail') {
-                alert("Message was not sent.")
-            }
-        })
-    }
-
-    resetForm() {
-        this.setState({ firstName: '', lastName: '', email: '', subject: '', message: '', })
-    }
-
-    render() {
-
-        return (
-
-            <div className="section-title">
+    
+  
+    return (
+        <div className="section-title">
                 <h2 className="title">Contact Us</h2>
                 <p>Let us know what you think! In order to provide better service,
                                  please do not hesitate to give us your feedback. Thank you.</p><hr />
                 <div className="formContainer">
-                    <form onSubmit={this.submitForm.bind(this)}
+                    <form onSubmit={sendEmail}
                         method="POST">
 
                         <div className="formItem">
                             <label>First Name</label>
                             <input placeholder="First Name"
-                                id="firstName"
+                                name="firstName"
                                 type="text"
                                 className="firstName"
                                 required
-                                value={this.state.firstName}
-                                onChange={this.onFirstNameChange.bind(this)} />
+                                 />
                         </div>
 
                         <div className="formItem">
                             <label>Last Name</label>
                             <input placeholder="Last Name"
-                                id="lastName"
+                                name="lastName"
                                 type="text"
                                 className="lastName"
-                                required value={this.state.lastName}
-                                onChange={this.onLastNameChange.bind(this)} />
+                                required
+                                />
                         </div>
 
                         <div className="formItem">
                             <label>Email</label>
                             <input placeholder="Email"
-                                id="email"
+                                name="email"
                                 type="email"
                                 className="email"
                                 aria-describedby="emailHelp"
                                 required
-                                value={this.state.email}
-                                onChange={this.onEmailChange.bind(this)} />
+                                />
                         </div>
 
 
                         <div className="form-group">
                             <label>Subject</label>
                             <input placeholder="Subject"
-                                id="subject" type="text"
+                                name="subject" type="text"
                                 className="subject"
-                                required value={this.state.subject}
-                                onChange={this.onSubjectChange.bind(this)} />
+                                 />
                         </div>
 
                         <div className="form-group">
                             <label>Message</label>
                             <textarea placeholder="Message"
-                                id="message"
+                                name="message"
                                 className="message"
                                 rows="5" col="6"
-                                required value={this.state.message}
-                                onChange={this.onMessageChange.bind(this)} />
+                                required 
+                                />
                         </div>
                        
                         <div className="formButton">
@@ -133,5 +89,3 @@ class Contact extends Component {
         );
     }
 
-}
-export default Contact;
