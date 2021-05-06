@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Route, NavLink, HashRouter, Link } from "react-router-dom";
 
+//import pages
 import Home from "./components/home/Home";
 import Services from "./components/services/Services";
 import Contact from "./components/contact/Contact";
@@ -10,18 +11,19 @@ import RN from "./components/login/rn";
 import CNA from "./components/login/cna";
 import PCA from "./components/login/pca";
 import Careers from "./components/login/Careers";
+
+//images and CSS
 import logo from "./logo_new.png";
 import styled from "styled-components";
 import "bootstrap/dist/css/bootstrap.css";
-
 import "./index.css";
 
-//import Footer from "./components/footer/Footer";
-
-//import { Components } from "antd/lib/date-picker/generatePicker";
 
 
 class App extends Component {
+
+  
+    
     render(){
         return (
             <HashRouter>          
@@ -113,31 +115,29 @@ export default App;
 
 const NavbarContainer = styled.div`
 img{
-    width: 8.5rem;
+    width: 10.5rem;
+    padding:20px;
+    margin-left:10px;
 }
 background: #F4F4F6;
 
 `;
 const FooterContainer = styled.div`
-    background: var(--ivory);
+    background: #F4F4F6;
 
     ul li{
         list-style: none;
-        color:var(--slate);
+        color:#54627B ;
         font-weight: bold;
-    }
-
-
-    a {
-        color: var(--ivory);
+    
         text-decoration: none;
         &:hover{
-            color: var(--taupe);
+            color: #9F9C93;
         }
     }
 
     .copy-right{
-        color: var(--slate);
+        color: #54627B ;
         font-weight:bold;
 
     }
