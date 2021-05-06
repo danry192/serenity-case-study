@@ -21,10 +21,11 @@ export default function Requests() {
 
   return (
     <div className="section-title">
-      <h2 className="title">Requests</h2>
+      <div className="section1"><h2>Requests</h2>
       <p>Let us know what you think! In order to provide better service,
                                  please do not hesitate to give us your feedback. Thank you.</p><hr />
-      <div className="formContainer">
+      </div>
+      <div className="form-container">
         <form onSubmit={sendEmail}
           method="POST">
           <div className="formItem">

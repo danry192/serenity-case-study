@@ -20,12 +20,12 @@ const Login = () => {
         setEmail('');
         setPassword('');
 
-    }
+    };
 
     const clearErrors = () => {
         setEmailError('');
         setPasswordError('');
-    }
+    };
 
     //Login Function
     const handleLogin = () => {

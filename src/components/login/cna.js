@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react';
 import "../../styles/CareersApp.css";
 import emailjs from 'emailjs-com';
 
@@ -16,17 +16,28 @@ export default function CNA() {
     }
 
 
-
-
     return (
         <div className="section-title">
-
-
+            
+            <div className="section1">
             <h2 className="title">Certified Nursing Assistant (CNA) Application</h2>
 
             <p>Be sure to fill out all of the forms below</p><hr />
+            </div>
 
-            <div className="formContainer">
+            <div className="job-description">
+                <h3>Job Description</h3>
+                <ul>
+                    <li>Assists patients with daily tasks and activities</li>
+                    <li>Cleans equipments and keeps supplies and additional equipment in stock</li>
+                    <li>Assists patients with cleaning and other patient care tasks</li>
+                    <li>Has proper CPR certifications and can perform CPR on patients if needed</li>
+                    <li>Must be of legal working age (18 years old)</li>
+                </ul>
+            </div>
+
+            
+            <div className="form-container">
 
                 <form onSubmit={sendEmail}
                     method="POST">
@@ -221,6 +232,15 @@ export default function CNA() {
                     </div>
 
                     <div className="form-group">
+                        <label>Do you have a nursing certification? (Mandatory)</label>
+                        <select name="nursingCert">
+                            <option>Yes</option>
+                            <option>No</option>
+                            <option>In progress</option>
+                            </select>
+                    </div>
+
+                    <div className="form-group">
                         <label>Are you authorized to work in the United States?</label>
                         <select name="authorized">
                             <option>Yes: Citizen, permanent resident, green card holder, etc.</option>
@@ -230,8 +250,8 @@ export default function CNA() {
 
 
 
-                    <div className="formButton">
-                        <button type="submit">Submit</button>
+                    <div className="form-button">
+                        <button classname="submit-button"type="submit">Submit</button>
                     </div>
 
                 </form>

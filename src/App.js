@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Route, NavLink, HashRouter, BrowserRouter, Link } from "react-router-dom";
+import { Route, NavLink, HashRouter, Link } from "react-router-dom";
 
 import Home from "./components/home/Home";
 import Services from "./components/services/Services";
@@ -26,14 +26,15 @@ class App extends Component {
         return (
             <HashRouter>          
               <NavbarContainer>{/*<h1>Serenity Home Care</h1>*/}
-                <ul className="header">
-                    <li><Link className="navbar-brand" to="/">
-                     <img src={logo} alt="..." /></Link></li>
-                    <li><NavLink to="/">Home</NavLink></li>
-                    <li><NavLink to="/Services">Services</NavLink></li>
-                    <li><NavLink to="/Contact">Contact</NavLink></li>
-                    <li><NavLink to="/Requests">Requests</NavLink></li>
-                    <li><NavLink to="/Login">Login</NavLink></li>
+                <ul className="navHeader">
+                    <li>
+                    <img src={logo} alt="..." /></li>
+                    <li className="navLink"><NavLink to="/Login">Login</NavLink></li>
+                    <li className="navLink"><NavLink to="/Requests">Requests</NavLink></li>
+                    <li className="navLink"><NavLink to="/Contact">Contact</NavLink></li>
+                    <li className="navLink"><NavLink to="/Services">Services</NavLink></li>
+                    <li className="navLink"><NavLink to="/">Home</NavLink></li>
+                    
 
 
                 </ul>
@@ -71,10 +72,21 @@ class App extends Component {
                      <li>Contact</li>
                  </Link>
 
+                 
+
+                 
+             </ul>
+             <ul className="list-inline mx-auto justify-content-center">
+             <Link to="/Requests">
+                     <li>Requests</li>
+                 </Link>
+
                  <Link to="/Login">
                      <li>Login</li>
                  </Link>
+
              </ul>
+             
          </div>
 
          <p className="pt-3 pb-2 pl-5 copy-right">
@@ -82,6 +94,7 @@ class App extends Component {
              {`${new Date().getFullYear()}`}
              &nbsp; All Rights Reserved
          </p>
+         
 
      </div>
 

@@ -1,6 +1,6 @@
 import React from "react";
-import { Route, wtihRouter,Link } from "react-router-dom";
-
+import { Link } from "react-router-dom";
+import "../../styles/Careers.css";
 import "bootstrap/dist/css/bootstrap.css";
 import { Card, Button, Row, Col } from 'react-bootstrap';
 
@@ -36,7 +36,7 @@ const Careers = ({ handleLogout }) => {
                     </Col>
 
 
-                    <Col xs="auto">
+                    <Col xs="3">
                         {/*Position 2*/}
 
                         <Card style={{ width: '18rem' }}>

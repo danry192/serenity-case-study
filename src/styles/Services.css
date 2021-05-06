@@ -1,6 +1,17 @@
+.headerServices{
+ 
+        padding: 20px;
+        margin:10px;
+       
+}
 .ServicesAccordion{
     text-align: left;
     padding: 10px;
     margin: 10px;
-
+    display: block;
 }
+
+
+.accordion{
+    width:50rem;
+} 

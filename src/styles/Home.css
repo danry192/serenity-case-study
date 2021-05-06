@@ -16,33 +16,26 @@ ivory: #F4F4F6     [nav bar]
   h1, h2, p, ul, li {
     font-family: sans-serif;
   }
-  ul.header li {
-    display: inline;
-    list-style-type: none;
-    margin-left: auto;
-  }
-  ul.header {
-    font-size: 20px;
-    padding: 0;
-    
-    
-  }
-  ul.header li a {
-    color: #9F9C93;
-    font-weight: bold;
-    text-decoration: none;
-    padding: 20px;
-    display: inline-block;
-  }
-  .content {
-    /*background-color: #FFF;*/
   
+  
+  .section1{
     padding: 20px;
+    margin:10px;
   }
-  .content h2 {
-    padding: 0;
-    margin: 0;
+
+  
+  .section2{
+    padding: 20px;
+    margin:10px;
   }
-  .content li {
-    margin-bottom: 10px;
+
+
+  .section3{
+    padding: 20px;
+    margin:10px;
+  }
+
+  .section3 ul{
+    list-style-type: none;
+    
   }

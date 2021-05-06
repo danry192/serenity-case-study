@@ -17,15 +17,37 @@ body {
   box-sizing: border-box;
 }
 
-:root{
-  --ivory: #FAFAFA;
-  --serenity: #ADC8D2;
-  --taupe: #9F9C93;
-  --slate: #54627B;
-  
-}
+
 html{
   height:100%;
 }
 
 
+ul.navHeader li {
+  display: inline;
+  list-style-type: none;
+  
+  
+}
+ul.navHeader {
+  font-size: 20px;
+  padding: 0;
+  
+}
+
+ul.navHeader li a {
+  color: #9F9C93;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 20px;
+  margin-right: 20px;
+  float: right;
+  font-size:20px;
+
+  
+}
+
+ul.navHeader img{
+  padding:10px;
+  margin:10px;
+}

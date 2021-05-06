@@ -6,7 +6,8 @@
 }
 
 button {
-  border: none;
+  border:#000;
+  border-radius: 4px;
   outline: none;
   width: 100%;
   padding: 15px 0;
@@ -91,6 +92,8 @@ button {
   font-size: 16px;
 }
 
+
+/*
 .hero {
   width: 100%;
   min-height: 100vh;
@@ -121,3 +124,4 @@ button {
   padding: 8px 0;
   background: #3a2b58;
 }
+*/

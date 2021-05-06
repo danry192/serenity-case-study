@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react';
 import "../../styles/CareersApp.css";
 import emailjs from 'emailjs-com';
 
@@ -16,17 +16,28 @@ export default function PCA() {
     }
 
 
-
-
     return (
         <div className="section-title">
-
-
+            
+            <div className="section1">
             <h2 className="title">Personal Care Assistant (PCA) Application</h2>
 
             <p>Be sure to fill out all of the forms below</p><hr />
+            </div>
 
-            <div className="formContainer">
+            <div className="job-description">
+                <h3>Job Description</h3>
+                <ul>
+                    <li>Assists patients with daily tasks and activities</li>
+                    <li>Cleans equipments and keeps supplies and additional equipment in stock</li>
+                    <li>Assists patients with cleaning and other patient care tasks</li>
+                    <li>Has proper CPR certifications and can perform CPR on patients if needed</li>
+                    <li>Must be of legal working age (18 years old)</li>
+                </ul>
+            </div>
+
+            
+            <div className="form-container">
 
                 <form onSubmit={sendEmail}
                     method="POST">
@@ -230,8 +241,8 @@ export default function PCA() {
 
 
 
-                    <div className="formButton">
-                        <button type="submit">Submit</button>
+                    <div className="form-button">
+                        <button classname="submit-button"type="submit">Submit</button>
                     </div>
 
                 </form>

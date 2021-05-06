@@ -9,7 +9,11 @@ import { Accordion, Card, Button } from 'react-bootstrap';
 
 function Services() {
   return (
-    <div className="serviceHeader">
+    <div className="servicesContainer">
+      <div className="headerServices">
+        <h1>Services</h1>
+        <p>Our services range from a variety, whether it's companionship care or providing full on support for our patietns.</p>
+      </div>
 
       <div className="ServicesAccordion">
       <Accordion defaultActiveKey="0">
