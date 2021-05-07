@@ -13,7 +13,7 @@ class Home extends Component {
 
             <div className="homeBody">
                 <br/>
-                <h1>Serenity Home Care</h1><br/>
+                <h1><em>Serenity Home Care</em></h1><br/>
 
                 <div className="row"> 
 
@@ -30,7 +30,7 @@ class Home extends Component {
                                 <li>Baltimore County</li>
                                 <li>Baltimore City</li>
                                 <li>Howard County</li>
-                                <li>To view the rest of the counties, click<a href="https://msa.maryland.gov/msa/mdmanual/01glance/html/county.html" target="_blank" rel="noreferrer"> here</a></li>
+                                <li>To view the rest of the counties, click<a href="https://msa.maryland.gov/msa/mdmanual/01glance/html/county.html" target="_blank" rel="noreferrer"> here.</a></li>
                             </ol>
                         
                         

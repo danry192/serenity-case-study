@@ -1,9 +1,32 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
+
+/*color schemes:
+serenity (light blue): #ADC8D2 [loho]
+taupe: #9F9C93     [don't know yet]
+slate: #54627B     [background]
+ivory: #F4F4F6     [nav bar]
+*/
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+html{
+  font-family: 'Libre Baskerville', serif;    
 }
 
+.section1-contact h2{
+  font-family: 'Libre Baskerville', serif;
+
+}
+.section1-contact{
+  padding-left: 40px;
+  margin-left:10px;
+  font-family: 'Libre Baskerville', serif;
+
+}
+
+.form-container-contact {
+  background-color: #54627B;
+  padding: 20px;
+  width: 100%;
+margin:0 auto;
+}
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
   width: 100%; /* Full width */
@@ -26,42 +49,28 @@ input[type=email], select, textarea {
   resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
-.form-button button{
-  background-color: #54627B;
-  color: white;
+.form-button-contact button{
+  background-color: #F4F4F6;
+  color: black;
   padding: 12px 20px;
   cursor: pointer;
-  width: 47.5rem;
+  width: 36rem;
   display: inline-block;
 }
 
-.form-button button :hover{
-  background-color: white;
+.form-button-contact button:hover{
+  background-color: #ADC8D2;
+  color:#F4F4F6;
 }
 
-.form-container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-  width: 50rem;
-}
-
-.job-description{
-    display:block;
-    margin-right:50px;
-    padding-right: 50px;;
-    float:right;
-    
-    border: #9F9C93;
-} 
   @media screen and (min-width:664px){
-      .form-container{
+      .form-container-contact{
           width:60%;
       }
   }
 
   @media screen and (min-width:986px){
-    .form-container{
+    .form-container-contact{
         width:40%;
     }
 }

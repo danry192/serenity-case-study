@@ -84,6 +84,22 @@ html{
     
   }
 
+  .section1 a{
+    color:black;
+    font-weight: bold;
+  }
+
+  .section1 a:hover{
+    color:#ADC8D2;
+  }
+  
+  .section1 p, ol, li{
+    font-size: 16px;
+  }
+
+  .section2 p{
+    font-size: 16px;
+  }
   
   .double-column {
     display: flex;
@@ -97,4 +113,13 @@ html{
  
   ol{
     list-style: none;
+  }
+
+  .section3 a{
+    color: black;
+    font-size:16px;
+  }
+
+  .section3 a:hover{
+    color:#ADC8D2;
   }

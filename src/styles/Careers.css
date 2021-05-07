@@ -1,0 +1,32 @@
+.button-careers {
+    
+    border:#000;
+    border-radius: 4px;
+    outline: none;
+    width: 500px;
+    margin-left:20px;
+    padding-left: 15px;
+    color: #000;
+    font-size: 16px;
+    background: #ADC8D2;
+    cursor: pointer;
+      
+  }
+
+  .button-space{
+    width:500px;
+    margin:0 auto;
+
+  }
+
+.careers-container{
+
+    width:1150px;
+    margin:0 auto;
+    position:relative;
+
+}
+
+
+
+ 

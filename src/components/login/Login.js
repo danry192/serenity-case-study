@@ -103,9 +103,10 @@ const Login = () => {
 
 
         <div className="App">
-            <h3>We are always looking for eager applicants to join our team!</h3>
             <br></br>
-            <h4>To Apply for a position, create an account or log in below:</h4>
+            <div className="section1-login"><h3>Login in or Sign Up</h3>
+            <br></br>
+            <p>To view careers, please log in or sign up below:</p></div>
 
 
             {/*if user exists, take to careers page*/}

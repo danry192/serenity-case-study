@@ -1,3 +1,10 @@
+/*color schemes:
+serenity (light blue): #ADC8D2 [loho]
+taupe: #9F9C93     [don't know yet]
+slate: #54627B     [background]
+ivory: #F4F4F6     [nav bar]
+*/
+
 
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 html{
@@ -11,6 +18,8 @@ height:100%;
  
         padding: 20px;
         margin:10px;
+        font-family: 'Libre Baskerville', serif;
+
        
 }
 .ServicesAccordion{
@@ -18,14 +27,56 @@ height:100%;
     padding: 10px;
     margin: 10px;
     display: block;
+    font-family: 'Libre Baskerville', serif;
+
+
     
 }
 
 .accordion{
     width:50rem;
+
+
     
 } 
+.cardTitle {
+  text-decoration: none;
+
+}
+
+.section1-services{
+  padding-left: 10px;
+  margin-left:10px;
+  font-family: 'Libre Baskerville', serif;
+
+
+  
+}
+.section1-services h2{
+  color:#9F9C93;
+  font-weight:bold;
+  font-family: 'Libre Baskerville', serif;
+
+}
+.accordion-label {
+  text-align:left;
+  text-decoration: none;
+  color: #ADC8D2;
+  font-weight:bold;
+  font-size:20px;
+  font-family: 'Libre Baskerville', serif;
+
+}
 
 p {
-font-size:15px;}
+font-size:17px;
+font-family: 'Libre Baskerville', serif;
+}
+
+#medicine_image{
+    width: 38rem;
+    float:right;
+    background:linear-gradient(540deg, #F4F4F6, #F4F4F6 60.5%, #54627B 60%, #54627B);
+
+}
 

@@ -22,10 +22,9 @@ export default function Requests() {
   return (
     <div className="section-title">
       <div className="section1"><h2>Requests</h2>
-      <p>Let us know what you think! In order to provide better service,
-                                 please do not hesitate to give us your feedback. Thank you.</p><hr />
+      <p>Please fill out the form below! Please allow us some time to gather information and reply to your inquiry or request.</p><hr />
       </div>
-      <div className="form-container">
+      <div className="form-container-requests">
         <form onSubmit={sendEmail}
           method="POST">
           <div className="formItem">
@@ -70,9 +69,11 @@ export default function Requests() {
             <label>Choose a service:</label>
             <select name="option">
               <option value="Companionship Care">Companionship Care</option>
-              <option value="Medicine Management and etc.">Medicine and Assistance Management</option>
+              <option value="Home Care">Home Care</option>
+              <option value="Medicine Management and etc.">Medicine Management and Assistance Management</option>
               <option value="Hospice Care">Hospice Care</option>
-              <option value="Personal Home Care">Personal Home Care</option>
+              <option value="Live In Care">Live In Care</option>
+              <option value="Private Home Care">Private Home Care</option>
             </select>
 
           </div>
@@ -87,12 +88,14 @@ export default function Requests() {
             />
           </div>
 
-          <div className="formButton">
+          <div className="form-button-requests">
             <button type="submit">Submit</button>
           </div>
 
         </form>
       </div >
+      <br/>
+      <br/>
     </div >
 
 

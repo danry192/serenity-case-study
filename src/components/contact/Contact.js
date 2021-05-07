@@ -1,5 +1,7 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
+import { Link } from "react-router-dom";
+
 import "../../styles/Contact.css";
 
 export default function Contact() {
@@ -19,11 +21,12 @@ export default function Contact() {
   
     return (
         
-        <div className="section-title">
-                <h2 className="title">Contact Us</h2>
-                <p>Let us know what you think! In order to provide better service,
-                                 please do not hesitate to give us your feedback. Thank you.</p><hr />
-                <div className="form-container">
+        <div className="section">
+                <div className="section1-contact"><h2>Contact Us</h2>
+                <p>Contact us here with any questions! If you have any inquiries or requests about services, fill out the <Link to="/Requests">Requests Form</Link></p><hr />
+                </div>
+                <br/>
+                <div className="form-container-contact">
                     <form onSubmit={sendEmail}
                         method="POST">
                         <div className="formItem">
@@ -74,12 +77,15 @@ export default function Contact() {
                                 />
                         </div>
                        
-                        <div className="formButton">
+                        <div className="form-button-contact">
                             <button type="submit">Submit</button>
                         </div>
                         
                     </form>
+                
                 </div >
+                <br></br>
+                <br></br>
             </div >
 
 

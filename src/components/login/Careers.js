@@ -9,11 +9,16 @@ const Careers = ({ handleLogout }) => {
 
 
 
-  return (
+    return (
 
-        <section className='careers'>
-            <nav>
+        <div className="careers">
+            <div className="careers-container">
 
+                <div class="row">
+                    <div className="column"></div>
+                    <div className="column"></div>
+                    <div className="column"></div>
+                </div>
                 <Row>
                     <Col xs="3">
                         {/*Position 1*/}
@@ -29,7 +34,7 @@ const Careers = ({ handleLogout }) => {
                                         <li>Has proper CPR certifications and can perform CPR on patients if needed</li>
 
                                     </ul>
-                                </Card.Text> 
+                                </Card.Text>
                                 <Link to="/Career/RN"><Button>Apply Here</Button></Link>
                             </Card.Body>
                         </Card>
@@ -54,7 +59,7 @@ const Careers = ({ handleLogout }) => {
                                 </Card.Text>
                                 <Link to="/Career/CNA"><Button variant="primary">Apply Here</Button></Link>
 
-                                
+
                             </Card.Body>
                         </Card>
                     </Col>
@@ -75,7 +80,7 @@ const Careers = ({ handleLogout }) => {
 
                                     </ul>
                                 </Card.Text> <Link to="/Career/PCA"><Button variant="primary">Apply Here</Button></Link>
-                                
+
                             </Card.Body>
                         </Card>
 
@@ -87,11 +92,16 @@ const Careers = ({ handleLogout }) => {
 
                 </Row>
 
+                <br />
+                <br />
 
-                <button onClick={handleLogout}>Logout</button>
-            </nav>
 
-        </section>
+            </div>
+
+            <div className="button-space"><button className="button-careers" onClick={handleLogout}>Logout</button></div>
+            <br />
+            <br />
+        </div>
 
     );
 

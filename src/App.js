@@ -88,6 +88,8 @@ class App extends Component {
                  </Link>
 
              </ul>
+
+            
              
          </div>
 
@@ -96,6 +98,12 @@ class App extends Component {
              {`${new Date().getFullYear()}`}
              &nbsp; All Rights Reserved
          </p>
+
+         <ul className="list-inline mx-auto justify-content-center">
+             <Link to ="/Contact"><li>Contact Information</li></Link>
+             <li>410-410-4105</li>
+             <li><a href="serenityhomecare9@gmail.com">serenityhomecare9@gmail.com</a></li>
+        </ul>
          
 
      </div>
