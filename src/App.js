@@ -121,13 +121,21 @@ img{
 }
 background: #F4F4F6;
 
+ul li{
+        
+        text-decoration: none;
+        &:hover{
+            color: #9F9C93;
+        }
+    }
+
 `;
 const FooterContainer = styled.div`
-    background: #F4F4F6;
+    background: #54627B;
 
     ul li{
         list-style: none;
-        color:#54627B ;
+        color: #F4F4F6;
         font-weight: bold;
     
         text-decoration: none;
@@ -137,7 +145,7 @@ const FooterContainer = styled.div`
     }
 
     .copy-right{
-        color: #54627B ;
+        color: #F4F4F6;
         font-weight:bold;
 
     }

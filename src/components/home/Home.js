@@ -5,79 +5,103 @@ import "../../styles/Home.css";
 import "bootstrap/dist/css/bootstrap.css";
 import { Row, Col, Container } from 'react-bootstrap';
 import home_care from "../../home_care.jpg";
+import rn from "../../rn.jpg";
+import serenity_rn from "../../serenity_rn.jpg";
 
-
+import styled from "styled-components";
 class Home extends Component {
     render() {
         return (
-            <div>
-                <Container>
-                    <Row>
-                        <Col>
-                            <h1>Serenity Home Care</h1>
-                            <p><span> Serenity Home Care is one of Maryland's finest home care providers located in Fulton, Maryland.<br />
-                         Serenity Home Care providers proudly assist patients and companions in all coutnies in Maryland.
-                    A list of Maryland Counties can be found <a href="https://msa.maryland.gov/msa/mdmanual/01glance/html/county.html" target="_blank" rel="noreferrer"> here</a> </span></p>
-                        </Col>
-                        <Col> <img src={home_care} alt="..." /></Col>
-                    </Row>
 
-                    <Row>
-                        <Col><h2>Why You Should Choose Us</h2>
-                            <p> We take pride in our employees work ethics and our patients cooperation. </p></Col>
-                        <Col> <img src={home_care} alt="..." />  </Col>
-                    </Row>
+            <div className="homeBody">
+                <br/>
+                <h1>Serenity Home Care</h1><br/>
 
-                    <Row>
-                        <Col> <h3>Resources and Quick Links</h3>
+                <div className="row"> 
 
-                            <p>The quick links below will redirect you to additional information about HIPPA and the Maryland Department of Health.</p>
+                    <div className="double-column">
+                        <div className="section1">
+
+                            <h2>About Us</h2>
+                            <p> <span> Serenity Home Care is one of Maryland's finest home care providers located in Fulton, Maryland. We proudly assist patients and
+                               hire employers all over the state of Maryland.
+                             </span></p>
+
+                            <ol className="list">The largest counties and most popular ones we are located in are the following:
+                                <li>Anne Arundel County</li>
+                                <li>Baltimore County</li>
+                                <li>Baltimore City</li>
+                                <li>Howard County</li>
+                                <li>To view the rest of the counties, click<a href="https://msa.maryland.gov/msa/mdmanual/01glance/html/county.html" target="_blank" rel="noreferrer"> here</a></li>
+                            </ol>
+                        
+                        
+                        </div>
+                    </div>
+
+
+
+
+                    <div className="column">
+                        <img src={home_care} alt="home care" id="myImage"/>
+                    </div>
+                </div>
+
+
+
+
+                <div className="row">
+
+                    <div className="double-column">
+                        <div className="section2">
+                            <h3>Why You Should Choose Us</h3>
+                            <p><span>Here at Serenity Home Care we take pride in helping our patients and employees find their perfect match.
+                                With all of the services that we offer, we try to please everyone that we can.</span> </p>
+
+                                <p><span>All of our personal care givers, certified nursing assitants, and registered nurses are CPR certified and hold an active nursing license. They are all more than prepared and fit to help assist you or your loved ones.</span></p>
+                        </div>
+                    </div>
+
+                    <div className="column">
+                        <img src={rn} alt="a registered nurse taking a patients blood pressure" id="myImage"/>
+                    </div>
+
+                </div>
+
+
+                <div className="row">
+
+                    <div className="double-column">
+                        <div className="section3">
+                            <h3>Resources and Quick Links</h3>
 
                             <ul className="Links">
                                 <li><a href="https://www.hhs.gov/hipaa/index.html" target="_blank" rel="noreferrer">HIPPA</a></li>
                                 <li><a href="https://health.maryland.gov/ohcq/Pages/Consumer_Information.aspx" target="_blank" rel="noreferrer" >Maryland Department of Health</a></li>
-                            </ul></Col>
-                        <Col> <img src={home_care} alt="..." /></Col>
-                    </Row>
+                                <li><a href="https://mbon.maryland.gov/Pages/default.aspx" target="_blank" rel="noreferrer" >Maryland Board of Nursing (For Licenses and Certifications)</a></li>
+                                <li><a href="https://coronavirus.maryland.gov/" target="_blank" rel="noreferrer" >Maryland COVID-19 Resources</a></li>
+                            
+                            
+                            </ul>
+                </div>
 
-                </Container>
+                    </div>
+
+
+
+                    <div className="column">
+                        <img src={serenity_rn} alt="RN's wearing PCE" id="myImage"/>
+                    </div>
+                
+                </div>
+                
+
+
+            <br/>
             </div>
+
         );
     }
 }
 
 export default Home;
-
-/*
-<div className="homeBody">
-                <div className="section1">
-                    <h1>Serenity Home Care</h1>
-                    <p><span> Serenity Home Care is one of Maryland's finest home care providers located in Fulton, Maryland.<br/>
-                         Serenity Home Care providers proudly assist patients and companions in all coutnies in Maryland.
-                    A list of Maryland Counties can be found <a href="https://msa.maryland.gov/msa/mdmanual/01glance/html/county.html" target="_blank" rel="noreferrer"> here</a> </span></p>
-                </div>
-
-                <br></br>
-
-                <div className="section2">
-                    <h2>Why You Should Choose Us</h2>
-                     <p> We take pride in our employees work ethics and our patients cooperation. </p>
-                </div>
-
-                <div className="section3">
-                    <h3>Resources and Quick Links</h3>
-
-                    <p>The quick links below will redirect you to additional information about HIPPA and the Maryland Department of Health.</p>
-
-                    <ul className="Links">
-                            <li><a href="https://www.hhs.gov/hipaa/index.html" target="_blank" rel="noreferrer">HIPPA</a></li>
-                            <li><a href="https://health.maryland.gov/ohcq/Pages/Consumer_Information.aspx" target="_blank" rel="noreferrer" >Maryland Department of Health</a></li>
-                    </ul>
-                </div>
-
-
-
-            </div>*/
-
-
-

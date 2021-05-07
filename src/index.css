@@ -5,6 +5,13 @@ slate: #54627B
 ivory: #F4F4F6     
 
 */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+html{
+  font-family: 'Libre Baskerville', serif;
+
+height:100%;
+  background-color: #F4F4F6;
+}
 
 body {
   
@@ -14,23 +21,22 @@ body {
   padding: 0;
   overflow-x: hidden;
   box-sizing: border-box;
+  font-family: 'Libre Baskerville', serif;
 }
-
-
-html{
-  height:100%;
-}
+  
 
 
 ul.navHeader li {
   display: inline;
   list-style-type: none;
-  
-  
+
+    
 }
+
+
 ul.navHeader {
-  font-size: 20px;
   padding: 0;
+
   
 }
 
@@ -41,9 +47,19 @@ ul.navHeader li a {
   padding: 20px;
   margin-right: 20px;
   float: right;
-  font-size:20px;
-
+  font-size:28px;
   
+  
+}
+
+ul.navHeader li a:hover{
+  color: #ADC8D2;
+
+}
+
+ul.navHeader li a:active{
+  color: #ADC8D2;
+
 }
 
 ul.navHeader img{
