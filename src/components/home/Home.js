@@ -1,14 +1,12 @@
 import React, { Component } from "react";
 //import { Link } from "react-router-dom";
-//import { Card, Button, Row, Col } from 'react-bootstrap';
+
 import "../../styles/Home.css";
 import "bootstrap/dist/css/bootstrap.css";
-import { Row, Col, Container } from 'react-bootstrap';
 import home_care from "../../home_care.jpg";
 import rn from "../../rn.jpg";
 import serenity_rn from "../../serenity_rn.jpg";
 
-import styled from "styled-components";
 class Home extends Component {
     render() {
         return (

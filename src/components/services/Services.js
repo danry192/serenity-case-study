@@ -11,12 +11,18 @@ function Services() {
   return (
     <div className="servicesContainer">
       <div className="headerServices">
-        <h1>Services</h1>
-        <p>Our services range from a variety, whether it's companionship care or providing full on support for our patietns.</p>
-      </div>
+        <div className="row-services">
+          <div className="column-services">
+            <h1>Services</h1>
+            <p>Our services range from a variety, whether it's companionship care or providing full on support for our patients.</p>
+          </div>
+        </div>
 
-      <div className="ServicesAccordion">
-      <Accordion defaultActiveKey="0">
+
+        
+          <div className="ServicesAccordion">
+            <div className="double-column">
+            <Accordion defaultActiveKey="0">
         <Card>
           <Card.Header>
             <Accordion.Toggle as={Button} className="cardTitle"variant="link" eventKey="0">
@@ -68,9 +74,10 @@ function Services() {
           </Accordion.Collapse>
         </Card>
       </Accordion>
+          </div>
+        </div>
+
       </div>
-
-
     </div>
   )
 }
