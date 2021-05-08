@@ -6,16 +6,17 @@ ivory: #F4F4F6     [nav bar]
 */
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 html{
-  font-family: 'Libre Baskerville', serif;    
+  font-family: 'Libre Baskerville', sans-serif;    
 }
 
   h1, h2, p, ul, li {
     font-family: 'Libre Bakersville',sans-serif;
   }
 
-  h2, h3{
+  h1, h2, h3{
     color: #9f9C93;
     font-weight:bold; 
+    font-family: 'Libre Bakersville';
   }
 
   .homeBody {
@@ -123,3 +124,4 @@ html{
   .section3 a:hover{
     color:#ADC8D2;
   }
+

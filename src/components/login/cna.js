@@ -18,26 +18,35 @@ export default function CNA() {
 
     return (
         <div className="section-title">
-            
-            <div className="section1">
-            <h2 className="title">Certified Nursing Assistant (CNA) Application</h2>
 
-            <p>Be sure to fill out all of the forms below</p><hr />
+            <div className="section1">
+                <h2 className="title">Certified Nursing Assistant (CNA) Application</h2>
+
+                <p>Be sure to fill out all of the fields below</p><hr />
             </div>
 
             <div className="job-description">
                 <h3>Job Description</h3>
                 <ul>
                     <li>Assists patients with daily tasks and activities</li>
+                    <li>Treats patients with chronic illnesses, special needs, and etc.</li>
                     <li>Cleans equipments and keeps supplies and additional equipment in stock</li>
+                    <li>Must be able to fax or electronically submit documents</li>
                     <li>Assists patients with cleaning and other patient care tasks</li>
                     <li>Has proper CPR certifications and can perform CPR on patients if needed</li>
-                    <li>Must be of legal working age (18 years old)</li>
+                    <li>Needs to be able to be "on-call" during certain situations</li>
+                    <li>Must have proper nursing license</li>
+                    <li>Minimum 2 years of experience or additional education</li>
+                    <li>U.S Citizenship required</li>
+                    <li>Must be 18 years or older</li>
+                    <li>Part and Full Time Positions Available</li>
+
+
                 </ul>
             </div>
 
-            
-            <div className="form-container">
+
+            <div className="form-container-careers">
 
                 <form onSubmit={sendEmail}
                     method="POST">
@@ -191,7 +200,7 @@ export default function CNA() {
                         />
                     </div>
 
-                    
+
                     <div className="form-group">
                         <label>Work History 1</label>
                         <textarea placeholder="Copy and paste work history 1"
@@ -228,7 +237,7 @@ export default function CNA() {
                             <option>Yes</option>
                             <option>No</option>
                             <option>In progress</option>
-                            </select>
+                        </select>
                     </div>
 
                     <div className="form-group">
@@ -237,7 +246,7 @@ export default function CNA() {
                             <option>Yes</option>
                             <option>No</option>
                             <option>In progress</option>
-                            </select>
+                        </select>
                     </div>
 
                     <div className="form-group">
@@ -245,13 +254,13 @@ export default function CNA() {
                         <select name="authorized">
                             <option>Yes: Citizen, permanent resident, green card holder, etc.</option>
                             <option>No (Need Visa or Sponsorship)</option>
-                            </select>
+                        </select>
                     </div>
 
 
 
-                    <div className="form-button">
-                        <button classname="submit-button"type="submit">Submit</button>
+                    <div className="form-button-job">
+                        <button classname="submit-button" type="submit">Submit</button>
                     </div>
 
                 </form>

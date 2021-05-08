@@ -1,23 +1,24 @@
-.button-careers {
-    
-    border:#000;
-    border-radius: 4px;
-    outline: none;
-    width: 500px;
-    margin-left:20px;
-    padding-left: 15px;
-    color: #000;
-    font-size: 16px;
-    background: #ADC8D2;
-    cursor: pointer;
-      
-  }
+/*color schemes:
+serenity (light blue): #ADC8D2
+taupe: #9F9C93     
+slate: #54627B     
+ivory: #F4F4F6    
+*/
+.form-button-careers button{
 
-  .button-space{
-    width:500px;
-    margin:0 auto;
+        background-color: #54627B;
+        color: black;
+        padding: 12px 20px;
+        cursor: pointer;
+        width:69rem;
+        display: inline-block;
+        margin:10px;
+    }
 
-  }
+      .form-button-careers button:hover{
+        background-color: #ADC8D2;
+        color:#F4F4F6;
+      }
 
 .careers-container{
 
@@ -26,6 +27,5 @@
     position:relative;
 
 }
-
 
 

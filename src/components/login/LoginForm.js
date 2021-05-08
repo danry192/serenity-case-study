@@ -1,6 +1,5 @@
 import React from 'react';
 import "../../styles/Login.css";
-import { Link } from "react-router-dom";
 
 
 const LoginForm=(props) =>{
@@ -23,9 +22,7 @@ const LoginForm=(props) =>{
 
         <section className = "login">
             <div className="loginContainer">
-             
-             <form>
-             <label>Username</label>
+                <label>Username</label>
                 <input 
                     type="text"
                     autoFocus
@@ -49,7 +46,7 @@ const LoginForm=(props) =>{
                 <div className="btnContainer">
                     {hasAccount ? (
                         <>
-                        <Link to="/Careers"><button onClick={handleLogin}>Sign In</button></Link>
+                        <button onClick={handleLogin}>Sign In</button>
                         <p>Don't have an account? <span onClick={() => setHasAccount(!hasAccount)}>Sign up here</span></p>
                         </>
 
@@ -57,16 +54,27 @@ const LoginForm=(props) =>{
 
                     ) : (
                         <>
-                        <Link to="/Careers"><button onClick={handleSignup}>Sign Up</button></Link>
+                        <button onClick={handleSignup}>Sign Up</button>
                         <p>Have an account? <span onClick={() => setHasAccount(!hasAccount)}>Log In here</span></p>
                         </>
 
                     )}
                 </div>
-                </form>
-            </div>
 
             
+
+            
+            
+            
+            
+            
+            
+            
+            
+        
+            </div>
+
+
         </section>
     );
 };

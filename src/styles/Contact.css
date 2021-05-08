@@ -63,6 +63,16 @@ input[type=email], select, textarea {
   color:#F4F4F6;
 }
 
+.section a{
+  text-decoration: none;
+  color:black;
+  font-weight:bold;
+}
+
+ul li a:hover{
+  color: black;
+
+}
   @media screen and (min-width:664px){
       .form-container-contact{
           width:60%;
