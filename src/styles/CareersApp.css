@@ -18,7 +18,9 @@ input[type=text], select, textarea {
     margin-bottom: 16px; 
     resize: vertical;}
 
-  
+  label{
+    color:black;
+  }
 
   input[type=email], select, textarea {
     width: 100%;
