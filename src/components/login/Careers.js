@@ -16,7 +16,9 @@ const Careers = ({ handleLogout }) => {
 
                 <div class="row">
                     <div className="column"></div>
+
                     <div className="column"></div>
+                    
                     <div className="column"></div>
                 </div>
                 <Row>
@@ -98,7 +100,7 @@ const Careers = ({ handleLogout }) => {
 
             </div>
 
-            <div className="button-space"><button className="button-careers" onClick={handleLogout}>Logout</button></div>
+            <Careers><button onClick={handleLogout}>Logout</button></Careers>
             <br />
             <br />
         </div>
