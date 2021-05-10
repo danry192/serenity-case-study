@@ -27,7 +27,7 @@ class App extends Component {
     render() {
         return (
             <HashRouter>
-                <NavbarContainer>{/*<h1>Serenity Home Care</h1>*/}
+                <NavbarContainer>
                     <ul className="navHeader">
                         <li>
                             <img src={logo} alt="..." /></li>
@@ -78,6 +78,8 @@ class App extends Component {
 
 
                             </ul>
+
+                            {/*Column 2*/}
                             <ul className="list-inline mx-auto justify-content-center">
                                 <Link to="/Requests">
                                     <li>Requests</li>
@@ -92,17 +94,17 @@ class App extends Component {
 
 
                         </div>
-
+                        {/*Column 3*/}
                         <p className="pt-3 pb-2 pl-5 copy-right">
                             &copy;&nbsp; Daniella Rakhamimov &nbsp;
              {`${new Date().getFullYear()}`}
              &nbsp; All Rights Reserved
          </p>
-
+                        {/*Column 4*/}
                         <ul className="list-inline mx-auto justify-content-center">
-                            <Link to="/Contact"><li>Contact Information</li></Link>
-                            <li>410-410-4105</li>
-                            <li><a href="serenityhomecare9@gmail.com">serenityhomecare9@gmail.com</a></li>
+                            <Link to="/Contact"><li>Contact Information: </li></Link>
+                            <li>Phone: 410-410-4105 | Fax: 410-410-9005</li>
+                            <li>Email: <a className = "footer-link"href="serenityhomecare9@gmail.com">serenityhomecare9@gmail.com</a></li>
                         </ul>
 
 
@@ -135,9 +137,11 @@ ul li{
         &:hover{
             color: #9F9C93;
         }
+       
     }
 
 `;
+
 const FooterContainer = styled.div`
     background: #54627B;
 ul{
@@ -162,7 +166,18 @@ ul{
 
     }
 
+.footer-link{
+    list-style: none;
+        color: #F4F4F6;
+        font-weight: bold;
+        font-family: 'Libre Bakersville';
+        text-decoration: none;
+        &:hover{
+            color: #9F9C93;
+        }
 
+}
 p{
     font-size:15px;
 }`;
+

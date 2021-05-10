@@ -60,10 +60,11 @@ ul.navHeader li a:hover{
 
 }
 
-ul.navHeader li a:active{
-  color: #ADC8D2;
+/*ul.navHeader li a:active{
+  border-color: #54627B ;
+  border: dashed;
 
-}
+}*/
 
 ul.navHeader img{
   padding:10px;

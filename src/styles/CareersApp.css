@@ -1,4 +1,9 @@
-
+/*color schemes:
+serenity (light blue): #ADC8D2
+taupe: #9F9C93     
+slate: #54627B     
+ivory: #F4F4F6    
+*/
 input[type=text], select, textarea {
     width: 100%; 
     padding: 12px; 
@@ -8,7 +13,9 @@ input[type=text], select, textarea {
     margin-top: 6px; 
     margin-bottom: 16px; 
     resize: vertical;}
-  input[type=tel], select, textarea {
+ 
+ 
+    input[type=tel], select, textarea {
     width: 100%; 
     padding: 12px; 
     border: 1px solid #ccc; 
@@ -18,7 +25,7 @@ input[type=text], select, textarea {
     margin-bottom: 16px; 
     resize: vertical;}
 
-  label{
+  .label-jobs{
     color:black;
   }
 
@@ -35,11 +42,13 @@ input[type=text], select, textarea {
   .form-button-job{
     background-color:white;
     border:outset;
-  color: black;
-  cursor: pointer;
-  width: 49rem;
-  display: inline-block;
-  margin-bottom: 30px;
+    color: black;
+    cursor: pointer;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+    margin-bottom: 30px;
   }
   
   .form-button-job button:hover{
@@ -50,20 +59,21 @@ input[type=text], select, textarea {
   
   
   .form-container-careers {
-    border-radius: 5px;
     background-color: #f2f2f2;
-    padding-left: 20px;
-    width: 50rem;
-    margin-left:30px;
+    width: 1000px;
+    margin: 0 auto;
   }
 
   .job-description{
       display:block;
-      margin-right:50px;
-      padding-right: 50px;
-      float:right;
-      padding-left:8px;
+      padding:10px;
       border: inset;
+      border-radius: 2px;
+      width: 1000px;
+      margin: 0 auto;
+      margin-bottom:30px;
+      
+      
       
   }
   

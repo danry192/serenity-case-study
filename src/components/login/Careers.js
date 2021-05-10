@@ -81,7 +81,7 @@ const Careers = ({ handleLogout }) => {
 
                     <Col xs="4">
 
-                        {/*Position 2*/}
+                        {/*Position 3*/}
 
                         <Card className="cardHeight">
                             <Card.Body>
