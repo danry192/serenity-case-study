@@ -22,7 +22,7 @@ export default function Requests() {
   return (
     <div className="section-title">
       <div className="section1"><h2>Requests</h2>
-      <p>Please fill out the form below! Please allow us some time to gather information and reply to your inquiry or request.</p><hr />
+      <p>Please fill out the form below! Please allow us some time to gather information and reply to your inquiry or request.</p><hr /><br/>
       </div>
       <div className="form-container-requests">
         <form onSubmit={sendEmail}
