@@ -106,8 +106,6 @@ const Login = () => {
             <br></br>
             <div className="section1-login"><h3>Login and Careers</h3>
             <br></br>
-
-
             {/*if user exists, take to careers page*/}
 
             {user ? (
