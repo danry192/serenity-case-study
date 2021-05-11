@@ -56,6 +56,8 @@ button {
     rgb(17, 27, 75) 100%
   );
   box-shadow: 0 50px 70px -20px rgba(0, 0, 0, 0.8);
+  margin-top: 10px;
+  margin-bottom: 50px;
 }
 
 .login .loginContainer label {
