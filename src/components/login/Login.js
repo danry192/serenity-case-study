@@ -104,9 +104,8 @@ const Login = () => {
 
         <div className="App">
             <br></br>
-            <div className="section1-login"><h3>Login in or Sign Up</h3>
+            <div className="section1-login"><h3>Login and Careers</h3>
             <br></br>
-            <p>To view careers, please log in or sign up below:</p></div>
 
 
             {/*if user exists, take to careers page*/}
