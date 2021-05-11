@@ -70,7 +70,7 @@ export default function Requests() {
             <select name="option">
               <option value="Companionship Care">Companionship Care</option>
               <option value="Home Care">Home Care</option>
-              <option value="Medicine Management and etc.">Medicine Management and Assistance Management</option>
+              <option value="Medicine Management and etc.">Medicine Management and Assistance Care</option>
               <option value="Hospice Care">Hospice Care</option>
               <option value="Live In Care">Live In Care</option>
               <option value="Private Home Care">Private Home Care</option>
