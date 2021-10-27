@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Case Study in Internet Applications Development
 
 This project was a case study for my graduate case study course, Internet Applications Development.
 
