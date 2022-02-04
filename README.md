@@ -14,4 +14,4 @@ https://serenity-home-care.herokuapp.com/#/
 
 #### Documentation
 
-Documenation was written, it is available upon request.
+Documenation is available upon request.
